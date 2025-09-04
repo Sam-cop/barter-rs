@@ -9,6 +9,7 @@ use crate::{
     strategy::{
         algo::AlgoStrategy,
         close_positions::{ClosePositionsStrategy, close_open_positions_with_market_orders},
+        ict::{IctStrategy, IctConfig, IctInstrumentData},
         on_disconnect::OnDisconnectStrategy,
         on_trading_disabled::OnTradingDisabled,
     },
@@ -39,6 +40,9 @@ pub mod on_disconnect;
 /// Defines a strategy interface enables custom [`Engine`] to be performed in the event that the
 /// `TradingState` gets set to `TradingState::Disabled`.
 pub mod on_trading_disabled;
+
+/// Inner Circle Trader (ICT) strategy implementation with Fair Value Gaps, Order Blocks, and market structure analysis.
+pub mod ict;
 
 /// Naive implementation of all strategy interfaces.
 ///
