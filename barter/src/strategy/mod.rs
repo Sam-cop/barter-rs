@@ -40,6 +40,9 @@ pub mod on_disconnect;
 /// `TradingState` gets set to `TradingState::Disabled`.
 pub mod on_trading_disabled;
 
+/// Inner Circle Trader (ICT) strategy implementation with Fair Value Gaps, Order Blocks, and market structure analysis.
+pub mod ict;
+
 /// Naive implementation of all strategy interfaces.
 ///
 /// *THIS IS FOR DEMONSTRATION PURPOSES ONLY, NEVER USE FOR REAL TRADING OR IN PRODUCTION*.
