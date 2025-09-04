@@ -9,6 +9,7 @@ use crate::{
     strategy::{
         algo::AlgoStrategy,
         close_positions::{ClosePositionsStrategy, close_open_positions_with_market_orders},
+        ict::{IctStrategy, IctConfig, IctInstrumentData},
         on_disconnect::OnDisconnectStrategy,
         on_trading_disabled::OnTradingDisabled,
     },
